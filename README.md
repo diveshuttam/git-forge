@@ -1,29 +1,20 @@
 # git-forge
 
-This is a experimental repository which 
-[forges git commits](https://github.com/diveshuttam/git-forge/commits/master)
+This is an experimental repository for testing my hypothesis on how GitHub [contribution calendar](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/managing-contribution-settings-on-your-profile/viewing-contributions-on-your-profile#contributions-calendar) works. Turned out to be a fun experiment. :p
+
+Forged [git commits](https://github.com/diveshuttam/git-forge/commits/master)
 from members of [BITS-ACM](https://github.com/bitsacm) and also from 
-some famous persons like Linus Torvalds and Kenneth Reitz.
+some a few famous people :p
 
-Ofcourse there is a small catch here, these commits won't show up on the
-contribution graph on the commiter's profile on GitHub unless they:
-- are added as a collaborator on the repository
-- are a member of the organization that owns the repository.
-- have forked the repository.
-- opened a pull request or issue in the repository.
-- have starred the repository.
-
-Reference: 
+Of course there is a small catch here, these commits won't show up on the
+contribution graph on the commiter's profile on GitHub unless certain conditions are met: 
 [GITHUB HELP: Why are my contributions not showing up on my profile?](
 https://help.github.com/articles/why-are-my-contributions-not-showing-up-on-my-profile/)
 
-I have experimented this with collaborators and the contributions do show
-up on their contribution graph. Though haven't verified for other cases yet.
+[PS: Kinda impressed that GitHub folks thought about all this):
 
-# How to forge commits??
-The logic is as simple as changing the git author and the commiter while adding
-the commit.
-Though there are a few other subtleties involved.
-I have discussed these in some detail and also how to detect forged commits 
-in [this](https://diveshuttam.me/git-forge) blog post.
-Do :heavy_check_mark: it out.
+# How to forge commits?
+The logic is simple: change the git author and the committer while adding the commit.
+
+# How to detect forged commits?
+Refer [commit signature verification](https://docs.github.com/en/authentication/managing-commit-signature-verification/about-commit-signature-verification)
